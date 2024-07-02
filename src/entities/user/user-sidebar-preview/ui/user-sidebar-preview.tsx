@@ -1,6 +1,6 @@
 'use client'
 
-import { getSessionUser } from '@/entities/session/session-user'
+import { getSessionUser } from '@/entities/session/user'
 import { Avatar, AvatarFallback, AvatarImage } from '@/shared/ui/avatar'
 
 import { ArrowDown } from 'lucide-react'

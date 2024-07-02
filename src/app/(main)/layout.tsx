@@ -1,6 +1,6 @@
 'use client'
 
-import { getSessionUser } from '@/entities/session/session-user'
+import { getSessionUser } from '@/entities/session/user'
 import { User } from '@/shared/types'
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/shared/ui'
 import { Header } from '@widgets/header'

@@ -1,6 +1,6 @@
 import { SignInPage } from '@/pages/sign-in'
 
-const Page = async ({}) => {
+const Page = async () => {
   return <SignInPage />
 }
 
