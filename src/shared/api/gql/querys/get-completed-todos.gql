@@ -1,0 +1,8 @@
+query getCompletedTodos {
+  todos(where: { isComplete: { _eq: true }, authorEmail: { _eq: $authorEmail } }) {
+    id
+    title
+    description
+    createdAt
+  }
+}

@@ -1,0 +1,12 @@
+query getTodoById($id: String!) {
+  todos_by_pk(id: $id) {
+    id
+    title
+    description
+    isAllViewPost
+    todosSection
+    priority
+    isComplete
+    createdAt
+  }
+}

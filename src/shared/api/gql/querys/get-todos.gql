@@ -1,0 +1,13 @@
+query GetTodos {
+  todos {
+    id
+    authorEmail
+    title
+    description
+    isAllViewPost
+    todosSection
+    priority
+    isComplete
+    createdAt
+  }
+}
