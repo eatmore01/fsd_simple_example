@@ -1,5 +1,5 @@
-import { CompleteTodoUserPreview } from '@/entities/todo/user'
-import { Box, Loader, ScrollArea } from '@/shared/ui'
+import { CompleteTodoUserPreview } from '@entities/todo/user'
+import { Box, Loader, ScrollArea } from '@shared/ui'
 import { useCompletedTodos } from './api'
 import { useAddCompletedTodosToStore, useCompletedTodoStore } from './model'
 import { Todo } from '@entities/todo'

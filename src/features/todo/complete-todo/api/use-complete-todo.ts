@@ -1,4 +1,4 @@
-import { COMPLETE_TODO } from '@/shared/api'
+import { COMPLETE_TODO } from '@shared/api'
 import { useMutation } from '@apollo/client'
 
 export function useCompleteTodo() {

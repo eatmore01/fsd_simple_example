@@ -1,8 +1,13 @@
-import { DoLogin } from '@/actions'
+import { DoLogin } from '@src/actions'
 import { Box, Button } from '@shared/ui'
 import { ToggleTheme } from '@features/toggle-theme'
+import { getSessionUser } from '@entities/session/user'
+import { redirect } from 'next/navigation'
+import { routes } from '@shared/constant'
 
-export const SignInPage = () => {
+export const SignInPage = async () => {
+  const user = await getSessionUser()
+  if (user) redirect(routes.today)
   return (
     <main className="flex flex-col items-center justify-between" data-testid={'main'}>
       <Box className="self-end m-20">

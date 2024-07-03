@@ -1,4 +1,4 @@
-import { GET_TODAY_TODOS } from '@/shared/api'
+import { GET_TODAY_TODOS } from '@shared/api'
 import { useQuery } from '@apollo/client'
 
 export function useTodayTodos(authorEmail: string) {

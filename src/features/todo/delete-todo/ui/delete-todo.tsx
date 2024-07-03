@@ -1,9 +1,9 @@
 'use client'
 
-import { Button, Loader } from '@/shared/ui'
+import { Button, Loader } from '@shared/ui'
+import { useUserStore } from '@shared/modal'
+import { cn } from '@shared/lib/utils'
 import { useDeleteTodo } from '../api'
-import { cn } from '@/shared/lib/utils'
-import { useUserStore } from '@/shared/modal'
 
 export const Btn = ({ todoId, className }: { todoId: string; className?: string }) => {
   const user = useUserStore((state) => state.user)

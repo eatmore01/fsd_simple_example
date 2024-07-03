@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@/shared/ui'
+import { Button } from '@shared/ui'
 import { useParams, useRouter } from 'next/navigation'
 
 interface Params {

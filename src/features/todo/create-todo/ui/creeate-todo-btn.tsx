@@ -1,7 +1,7 @@
 'use client'
 
-import { useModalStore } from '@/shared/modal'
-import { Button } from '@/shared/ui'
+import { useModalStore } from '@shared/modal'
+import { Button } from '@shared/ui'
 import { CirclePlus } from 'lucide-react'
 
 export const CreateTodoBtn = () => {

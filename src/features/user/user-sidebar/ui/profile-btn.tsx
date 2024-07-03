@@ -1,5 +1,5 @@
-import { routes } from '@/shared/constant'
-import { Button } from '@/shared/ui'
+import { routes } from '@shared/constant'
+import { Button } from '@shared/ui'
 import { useRouter } from 'next/navigation'
 
 export const ProfileBtn = () => {

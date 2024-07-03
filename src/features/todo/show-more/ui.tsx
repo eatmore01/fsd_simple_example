@@ -16,16 +16,16 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/shared/ui'
+} from '@shared/ui'
 import { ChevronDown } from 'lucide-react'
 import { ReactNode } from 'react'
 
 interface Props {
-  EditBtn: ReactNode
-  DeleteBtn: ReactNode
+  renderDeleteBtn: () => JSX.Element
+  renderEditBtn: () => JSX.Element
 }
 
-export const UI = ({ EditBtn, DeleteBtn }: Props) => {
+export const UI = ({ renderDeleteBtn, renderEditBtn }: Props) => {
   return (
     <AlertDialog>
       <DropdownMenu>
@@ -38,7 +38,7 @@ export const UI = ({ EditBtn, DeleteBtn }: Props) => {
           <DropdownMenuLabel>More Action</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem>{EditBtn}</DropdownMenuItem>
+            <DropdownMenuItem>{renderEditBtn()}</DropdownMenuItem>
             <AlertDialogTrigger className="relative flex w-full cursor-pointer select-none items-center rounded-sm px-2 py-1.5  text-sm outline-none transition-colors hover:bg-accent focus:text-accent-foreground">
               <span className="ml-3.5">Delete</span>
             </AlertDialogTrigger>
@@ -52,7 +52,7 @@ export const UI = ({ EditBtn, DeleteBtn }: Props) => {
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction>{DeleteBtn}</AlertDialogAction>
+                <AlertDialogAction>{renderDeleteBtn()}</AlertDialogAction>
               </AlertDialogFooter>
             </AlertDialogContent>
           </DropdownMenuGroup>

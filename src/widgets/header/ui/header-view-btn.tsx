@@ -1,4 +1,4 @@
-import { Box, Button } from '@/shared/ui'
+import { Box } from '@shared/ui'
 import { ReactNode } from 'react'
 
 interface Props {

@@ -1,4 +1,4 @@
-import { useModalStore } from '@/shared/modal'
+import { useModalStore } from '@shared/modal'
 import {
   AlertDialog,
   AlertDialogAction,
@@ -8,7 +8,7 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from '@/shared/ui'
+} from '@shared/ui'
 import { ReactNode } from 'react'
 
 interface Props {

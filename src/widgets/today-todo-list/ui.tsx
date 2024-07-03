@@ -3,7 +3,7 @@
 import { TodoCard } from '@widgets/todo-card'
 import { useUserStore } from '@entities/user'
 import { Todo } from '@entities/todo'
-import { Box, Loader } from '@/shared/ui'
+import { Box, Loader } from '@shared/ui'
 
 import { useTodayTodos } from './api'
 import { useAddTodayTodosToStore, useTodayTodoStore } from './model'

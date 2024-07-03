@@ -1,4 +1,4 @@
-import { GET_ALL_TODOS, GET_TODAY_TODOS } from '@/shared/api'
+import { GET_ALL_TODOS, GET_TODAY_TODOS } from '@shared/api'
 import { ApolloCache, DefaultContext, FetchResult, MutationFunctionOptions, OperationVariables } from '@apollo/client'
 
 interface Props {

@@ -18,11 +18,11 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from '@/shared/ui'
+} from '@shared/ui'
 
 import { TodoPriority } from '@shared/constant'
 import { CompleteTodo } from '@features/todo'
-import { cn } from '@/shared/lib/utils'
+import { cn } from '@shared/lib/utils'
 import { useEditTodoFormModel } from '../model'
 import { useUpdateTodo, useTodoById, updateTodo as Update } from '../api'
 

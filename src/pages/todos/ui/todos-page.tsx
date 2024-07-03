@@ -1,8 +1,8 @@
-import { CreateTodoBtn, CreateTodoForm } from '@/features/todo/create-todo'
-import { AllTodoList } from '@/widgets/all-todo-list'
-import { TodayTodoList } from '@/widgets/today-todo-list'
+import { CreateTodoBtn, CreateTodoForm } from '@features/todo/create-todo'
+import { AllTodoList } from '@widgets/all-todo-list'
+import { TodayTodoList } from '@widgets/today-todo-list'
 import { TodosPagePreview } from './todos-page-review'
-import { Box } from '@/shared/ui'
+import { Box } from '@shared/ui'
 
 interface Params {
   todosType: string
@@ -10,7 +10,6 @@ interface Params {
 
 export const TodosPage = async ({ params }: { params: Params }) => {
   //prettier-ignore
-
   const currentTodoList = {
       'today': <TodayTodoList />,
       'all': <AllTodoList />

@@ -1,4 +1,4 @@
-import { GET_COMPLETED_TODOS } from '@/shared/api'
+import { GET_COMPLETED_TODOS } from '@shared/api'
 import { useQuery } from '@apollo/client'
 
 export function useCompletedTodos(authorEmail: string) {

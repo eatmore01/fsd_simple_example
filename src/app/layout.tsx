@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter as FontSans } from 'next/font/google'
-import { cn } from '@/shared/lib/utils'
+import { cn } from '@shared/lib'
 import './globals.css'
 import { ApolloProvider, ThemeProvider } from './_providers'
 

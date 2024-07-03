@@ -1,4 +1,4 @@
-import { HomePage } from '@/pages/home-p'
+import { HomePage } from '@pages/home-p'
 
 const Page = async () => {
   return <HomePage />

@@ -1,14 +1,14 @@
 'use client'
 
 import { ReactNode, useEffect } from 'react'
-import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/shared/ui'
+import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@shared/ui'
 
 import { getSessionUser } from '@entities/session/user'
 import { User } from '@entities/user'
 import { Header } from '@widgets/header'
 import { SideBar } from '@widgets/sidebar'
 import { ApolloProvider } from '../_providers'
-import { useUserStore } from '@/shared/modal'
+import { useUserStore } from '@shared/modal'
 
 interface Props {
   children: ReactNode

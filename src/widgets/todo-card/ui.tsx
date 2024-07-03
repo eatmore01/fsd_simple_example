@@ -46,7 +46,10 @@ export function TodoCard({ todo }: { todo: Todo }) {
             <TodoCardTaskInfo title={todo.title} description={todo.description} />
           </Box>
         </Box>
-        <ShowMore DeleteBtn={<DeleteBtn todoId={todo.id} />} EditBtn={<EditTodoBtn todoId={todo.id} />} />
+        <ShowMore
+          renderDeleteBtn={() => <DeleteBtn todoId={todo.id} />}
+          renderEditBtn={() => <EditTodoBtn todoId={todo.id} />}
+        />
       </CardContent>
       <CardFooter className="flex flex-col items-start">
         <TodoCardPriorityBadge priority={todo.priority} />

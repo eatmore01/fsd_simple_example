@@ -1,4 +1,4 @@
-import { TodosPage } from '@/pages/todos'
+import { TodosPage } from '@pages/todos'
 
 interface Props {
   params: { todosType: string; todoId: string }

@@ -1,4 +1,4 @@
-import { UserPage } from '@/pages/user-page'
+import { UserPage } from '@pages/user-page'
 
 const Page = async () => {
   return <UserPage />

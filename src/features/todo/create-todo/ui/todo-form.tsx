@@ -19,11 +19,11 @@ import {
   Textarea,
 } from '@shared/ui'
 
-import { TodoPriority } from '@/shared/constant'
+import { TodoPriority } from '@shared/constant'
 import { SubmitHandler } from 'react-hook-form'
 import { Flag } from 'lucide-react'
 
-import { useModalStore, useUserStore } from '@/shared/modal'
+import { useModalStore, useUserStore } from '@shared/modal'
 
 import { createTodoHandler, useCreateTodo } from '../api'
 import { useTodoFormModel } from '../model'

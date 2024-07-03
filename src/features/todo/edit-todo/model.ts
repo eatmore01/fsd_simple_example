@@ -1,4 +1,3 @@
-import { Todo } from '@/shared/types'
 import { useEffect, useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { EditFormState } from './ui'

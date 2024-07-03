@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 
-export async function HomePage() {
+export const HomePage = async () => {
   redirect('/home/today')
   return <></>
 }

@@ -1,9 +1,14 @@
-import { routes } from '@/shared/constant'
+import { getSessionUser } from '@entities/session/user'
+import { routes } from '@shared/constant'
 import { ToggleTheme } from '@features/toggle-theme'
 import { Box, Button } from '@shared/ui'
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
 
-export const StartUpPage = () => {
+export const StartUpPage = async () => {
+  const user = await getSessionUser()
+  if (user) redirect(routes.today)
+
   return (
     <main className="flex  flex-col  justify-between">
       <Box className="self-end m-20">

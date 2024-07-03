@@ -1,4 +1,4 @@
-import { DELETE_TODO, GET_ALL_TODOS, GET_COMPLETED_TODOS, GET_TODAY_TODOS } from '@/shared/api'
+import { DELETE_TODO, GET_ALL_TODOS, GET_COMPLETED_TODOS, GET_TODAY_TODOS } from '@shared/api'
 import { useMutation } from '@apollo/client'
 
 export function useDeleteTodo(authorEmail: string) {

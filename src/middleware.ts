@@ -5,10 +5,10 @@ export default async function Middleware(req: NextRequest) {
   const session = await auth()
 
   if (!session) {
-    return NextResponse.redirect(new URL('/', req.nextUrl))
+    NextResponse.redirect(new URL('/', req.url))
   }
 
-  return NextResponse.next()
+  NextResponse.next()
 }
 
 export const config = {

@@ -1,5 +1,5 @@
-import { EditTodoForm } from '@/features/todo/edit-todo'
-import { Box, Dialog, DialogContent, DialogHeader, DialogTitle } from '@/shared/ui'
+import { EditTodoForm } from '@features/todo'
+import { Box, Dialog, DialogContent, DialogHeader, DialogTitle } from '@shared/ui'
 
 interface Params {
   params: { todosType: string; todoId: string }

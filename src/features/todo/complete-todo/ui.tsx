@@ -1,9 +1,9 @@
 'use client'
 
-import { Box, Checkbox } from '@/shared/ui'
+import { Box, Checkbox } from '@shared/ui'
+import { useUserStore } from '@shared/modal'
 import { useCompleteTodo, completeTodoHandler } from './api'
 import { useParams } from 'next/navigation'
-import { useUserStore } from '@/shared/modal'
 
 interface Props {
   todoId: string

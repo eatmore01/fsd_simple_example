@@ -1,5 +1,5 @@
-import { DoLogout } from '@/actions'
-import { Button } from '@/shared/ui'
+import { DoLogout } from '@src/actions'
+import { Button } from '@shared/ui'
 
 export const LogoutBtn = () => {
   return (

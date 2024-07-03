@@ -1,4 +1,4 @@
-import { ADD_TODO, GET_ALL_TODOS, GET_TODAY_TODOS } from '@/shared/api'
+import { ADD_TODO, GET_ALL_TODOS, GET_TODAY_TODOS } from '@shared/api'
 import { useMutation } from '@apollo/client'
 
 export function useCreateTodo(authorEmail: string) {
