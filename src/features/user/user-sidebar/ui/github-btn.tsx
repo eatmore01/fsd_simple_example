@@ -1,5 +1,5 @@
-import { Button } from '@/shared/ui'
-import { GoToGitHub } from '../lib/github-action'
+import { Button } from '@shared/ui'
+import { GoToGitHub } from '../lib'
 
 interface Props {
   userName: string

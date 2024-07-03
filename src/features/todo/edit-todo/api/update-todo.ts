@@ -1,22 +1,14 @@
-import {
-  ApolloCache,
-  DefaultContext,
-  FetchResult,
-  MutationFunctionOptions,
-  OperationVariables,
-} from '@apollo/client'
-import { EditForm } from '../ui'
+import { ApolloCache, DefaultContext, FetchResult, MutationFunctionOptions, OperationVariables } from '@apollo/client'
+import { EditFormState } from '../ui'
 
 export function updateTodo(
   updateTodo: (
-    options?:
-      | MutationFunctionOptions<any, OperationVariables, DefaultContext, ApolloCache<any>>
-      | undefined,
+    options?: MutationFunctionOptions<any, OperationVariables, DefaultContext, ApolloCache<any>> | undefined
   ) => Promise<FetchResult<any>>,
   todoId: string,
-  data: EditForm,
+  data: EditFormState,
   priority: string,
-  isTodoViewAll: boolean,
+  isTodoViewAll: boolean
 ) {
   updateTodo({
     variables: {

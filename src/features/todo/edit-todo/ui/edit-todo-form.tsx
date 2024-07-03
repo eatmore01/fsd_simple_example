@@ -1,11 +1,16 @@
 'use client'
-
-import { Box, Button, Loader, Input } from '@/shared/ui'
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Textarea } from '@/shared/ui/textarea'
-import { CompleteTodo } from '@features/todo/complete-todo'
+import { SubmitHandler } from 'react-hook-form'
+import { ArrowLeft, Flag, Pencil, Send } from 'lucide-react'
 
 import {
+  Box,
+  Button,
+  Loader,
+  Input,
+  Textarea,
+  Separator,
   Select,
   SelectContent,
   SelectGroup,
@@ -13,14 +18,12 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from '@/shared/ui/select'
-import { ArrowLeft, Flag, Pencil, Send } from 'lucide-react'
-import { TodoPriority } from '@/shared/constant'
-import { Separator } from '@/shared/ui/separator'
+} from '@/shared/ui'
+
+import { TodoPriority } from '@shared/constant'
+import { CompleteTodo } from '@features/todo'
 import { cn } from '@/shared/lib/utils'
-import { useState } from 'react'
-import { useEditTodoFormModel } from '../model/edit-todo-form-model'
-import { SubmitHandler } from 'react-hook-form'
+import { useEditTodoFormModel } from '../model'
 import { useUpdateTodo, useTodoById, updateTodo as Update } from '../api'
 
 export interface EditForm {

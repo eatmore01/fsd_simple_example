@@ -6,8 +6,10 @@ import { useParams, useRouter } from 'next/navigation'
 interface Params {
   [todosType: string]: string
 }
-
-export const EditTodoBtn = ({ todoId }: { todoId: string }) => {
+interface Props {
+  todoId: string
+}
+export const EditTodoBtn = ({ todoId }: Props) => {
   const { push } = useRouter()
   const params = useParams<Params>()
 

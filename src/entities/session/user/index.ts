@@ -1,1 +1,1 @@
-export { getSessionUser } from './model/get-session-user'
+export { getSessionUser } from './model'

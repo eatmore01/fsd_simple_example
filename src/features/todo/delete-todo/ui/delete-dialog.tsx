@@ -1,4 +1,4 @@
-import { useModalStore } from '@/shared/model'
+import { useModalStore } from '@/shared/modal'
 import {
   AlertDialog,
   AlertDialogAction,
@@ -26,8 +26,7 @@ export const DeleteDialog = ({ DeleteBtn }: Props) => {
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your todo and remove your
-            data from our servers.
+            This action cannot be undone. This will permanently delete your todo and remove your data from our servers.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>

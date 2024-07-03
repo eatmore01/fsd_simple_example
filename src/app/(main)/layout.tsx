@@ -1,13 +1,14 @@
 'use client'
 
-import { getSessionUser } from '@/entities/session/user'
-import { User } from '@/shared/types'
+import { ReactNode, useEffect } from 'react'
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/shared/ui'
+
+import { getSessionUser } from '@entities/session/user'
+import { User } from '@entities/user'
 import { Header } from '@widgets/header'
 import { SideBar } from '@widgets/sidebar'
-import { ReactNode, useEffect, useState } from 'react'
 import { ApolloProvider } from '../_providers'
-import { useUserStore } from '@/shared/model'
+import { useUserStore } from '@/shared/modal'
 
 interface Props {
   children: ReactNode
@@ -28,7 +29,7 @@ const MainLayout = ({ children }: Props) => {
   return (
     <ApolloProvider>
       <ResizablePanelGroup direction="horizontal" className="min-h-screen rounded-lg border w-full">
-        <ResizablePanel defaultSize={15}>{user ? <SideBar user={user} /> : <></>}</ResizablePanel>
+        <ResizablePanel defaultSize={15}>{user ? <SideBar user={user} /> : null}</ResizablePanel>
         <ResizableHandle withHandle />
         <ResizablePanel defaultSize={85}>
           <ResizablePanelGroup direction="vertical">

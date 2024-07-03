@@ -1,1 +1,1 @@
-export { UI as TodayTodoList } from './ui/today-todo-list'
+export { TodayTodoList } from './ui'

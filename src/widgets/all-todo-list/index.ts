@@ -1,1 +1,1 @@
-export { UI as AllTodoList } from './ui/all-todo-list'
+export { UI as AllTodoList } from './ui'

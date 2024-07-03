@@ -1,13 +1,16 @@
 'use client'
 
-import { getSessionUser } from '@/entities/session/user'
 import { Avatar, AvatarFallback, AvatarImage } from '@/shared/ui/avatar'
 
 import { ArrowDown } from 'lucide-react'
 import { UserSideBarPreviewSkeleton } from './user-sidebar-preview-skeleton'
-import { User } from '@/shared/types'
+import { User } from '@entities/user'
 
-export const UserSideBarPreview = ({ user }: { user: User }) => {
+interface Props {
+  user: User
+}
+
+export const UserSideBarPreview = ({ user }: Props) => {
   const fallBackName = user.name.substring(0, 2)
 
   if (!user) return <UserSideBarPreviewSkeleton />

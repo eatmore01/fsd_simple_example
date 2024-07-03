@@ -1,24 +1,16 @@
-import {
-  ApolloCache,
-  DefaultContext,
-  FetchResult,
-  MutationFunctionOptions,
-  OperationVariables,
-} from '@apollo/client'
-import { TaskForm } from '../ui/todo-form'
-import { getNewUUID } from '@/shared/utils'
+import { ApolloCache, DefaultContext, FetchResult, MutationFunctionOptions, OperationVariables } from '@apollo/client'
+import { TaskForm } from '../ui'
+import { getNewUUID } from '@shared/lib'
 
 export const createTodoHandler = (
   addTodo: (
-    options?:
-      | MutationFunctionOptions<any, OperationVariables, DefaultContext, ApolloCache<any>>
-      | undefined,
+    options?: MutationFunctionOptions<any, OperationVariables, DefaultContext, ApolloCache<any>> | undefined
   ) => Promise<FetchResult<any>>,
   data: TaskForm,
   authorEmail: string,
   priority: string,
   isAllViewPost: boolean,
-  todosSection: string,
+  todosSection: string
 ) => {
   const timestamp = Date.now()
   const fullDate = new Date(timestamp)

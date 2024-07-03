@@ -1,1 +1,1 @@
-export { UI as UserProfilePreview } from './ui/user-profile-review'
+export { UI as UserProfilePreview } from './ui'

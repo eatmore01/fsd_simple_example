@@ -1,7 +1,7 @@
 'use client'
 
-import { Box } from '@/shared/ui'
-import { firstToUp } from '../lib/first-to-up'
+import { Box } from '@shared/ui'
+import { firstToUp } from '../lib'
 
 interface Props {
   todosPageTitle: string

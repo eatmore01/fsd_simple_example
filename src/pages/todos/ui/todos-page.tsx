@@ -9,16 +9,17 @@ interface Params {
 }
 
 export const TodosPage = async ({ params }: { params: Params }) => {
+  //prettier-ignore
+
+  const currentTodoList = {
+      'today': <TodayTodoList />,
+      'all': <AllTodoList />
+  }[params.todosType]
+
   return (
     <Box className="flex flex-col items-center">
       <TodosPagePreview todosPageTitle={params.todosType} />
-      {params.todosType === 'today' ? (
-        <TodayTodoList />
-      ) : params.todosType === 'all' ? (
-        <AllTodoList />
-      ) : (
-        <></>
-      )}
+      {currentTodoList}
       <CreateTodoBtn />
       <CreateTodoForm todosSection={params.todosType} />
     </Box>

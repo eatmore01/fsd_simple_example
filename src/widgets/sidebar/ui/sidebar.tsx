@@ -1,6 +1,8 @@
 'use client'
+import { Atom } from 'lucide-react'
 
-import { UserSideBarPreview, UserSideBarPreviewSkeleton } from '@/entities/user/user-sidebar-preview'
+import { UserSideBarPreview, UserSideBarPreviewSkeleton, User } from '@entities/user'
+import { GithubBtn, LogoutBtn, ProfileBtn } from '@features/user'
 import { ToggleTheme } from '@features/toggle-theme'
 import {
   Box,
@@ -12,10 +14,7 @@ import {
   DropdownMenuTrigger,
 } from '@shared/ui'
 import { SidebarItem } from './sidebar-item'
-import { Atom } from 'lucide-react'
-import { routes } from '@/shared/constant'
-import { GithubBtn, LogoutBtn, ProfileBtn } from '@features/user/user-sidebar'
-import { User } from '@/shared/types'
+import { routes } from '@shared/constant'
 
 export const SideBar = ({ user }: { user: User | null | any }) => {
   return (

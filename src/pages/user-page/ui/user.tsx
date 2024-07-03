@@ -1,9 +1,9 @@
 import { CompleteTodoUserPreview } from '@/entities/todo/user'
 import { UserProfilePreview } from '@/entities/user/user-profile-preview'
 import { LogoutBtn } from '@/features/user/user-sidebar'
-import { useUserStore } from '@/shared/model'
+import { useUserStore } from '@/shared/modal'
 import { Box, Button, Loader } from '@/shared/ui'
-import { UserCompletedTodoList } from '@/widgets/user-completed-todo-list/ui/user-completed-todo-list'
+import { UserCompletedTodoList } from '@widgets/user-completed-todo-list'
 import { ChevronLeft } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 

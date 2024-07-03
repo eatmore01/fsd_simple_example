@@ -1,1 +1,1 @@
-export { TodosPage } from './ui/todos-page'
+export { TodosPage } from './ui'

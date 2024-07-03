@@ -1,2 +1,1 @@
-export { Btn as DeleteBtn } from './ui/delete-todo'
-export { DeleteDialog } from './ui/delete-dialog'
+export { DeleteBtn, DeleteDialog } from './ui'

@@ -1,3 +1,1 @@
-export { GithubBtn } from './ui/github-btn'
-export { LogoutBtn } from './ui/logout-btn'
-export { ProfileBtn } from './ui/profile-btn'
+export { GithubBtn, LogoutBtn, ProfileBtn } from './ui'

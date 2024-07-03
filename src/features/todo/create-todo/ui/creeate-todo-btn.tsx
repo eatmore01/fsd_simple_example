@@ -1,10 +1,10 @@
 'use client'
 
-import { useModalStore } from '@/shared/model'
+import { useModalStore } from '@/shared/modal'
 import { Button } from '@/shared/ui'
 import { CirclePlus } from 'lucide-react'
 
-export const Btn = () => {
+export const CreateTodoBtn = () => {
   const { onOpen } = useModalStore()
 
   return (

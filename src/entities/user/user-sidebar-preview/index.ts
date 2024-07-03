@@ -1,2 +1,1 @@
-export { UserSideBarPreview } from './ui/user-sidebar-preview'
-export { UserSideBarPreviewSkeleton } from './ui/user-sidebar-preview-skeleton'
+export { UserSideBarPreview, UserSideBarPreviewSkeleton } from './ui'

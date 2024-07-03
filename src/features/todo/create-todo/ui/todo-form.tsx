@@ -1,13 +1,13 @@
 'use client'
 
-import { Box, Button, Dialog, DialogContent, DialogHeader, DialogTitle, Loader } from '@shared/ui'
-import { Input } from '@shared/ui/input'
-import { Textarea } from '@/shared/ui/textarea'
-import { TodoPriority } from '@/shared/constant'
-import { SubmitHandler } from 'react-hook-form'
-import { Flag } from 'lucide-react'
-
 import {
+  Box,
+  Button,
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  Loader,
   Select,
   SelectContent,
   SelectGroup,
@@ -15,19 +15,25 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from '@shared/ui/select'
-import { useModalStore, useUserStore } from '@/shared/model'
+  Input,
+  Textarea,
+} from '@shared/ui'
 
-import { createTodoHandler } from '../api/create-todo-handler'
-import { useCreateTodo } from '../api/use-create-todo'
-import { useTodoFormModel } from '../model/todo-form-model'
+import { TodoPriority } from '@/shared/constant'
+import { SubmitHandler } from 'react-hook-form'
+import { Flag } from 'lucide-react'
+
+import { useModalStore, useUserStore } from '@/shared/modal'
+
+import { createTodoHandler, useCreateTodo } from '../api'
+import { useTodoFormModel } from '../model'
 
 export interface TaskForm {
   title: string
   description: string
 }
 
-export const Form = ({ todosSection }: { todosSection: string }) => {
+export const CreateTodoForm = ({ todosSection }: { todosSection: string }) => {
   const user = useUserStore((state) => state.user)
 
   const { addTodo, loading, error } = useCreateTodo(user?.email || '')

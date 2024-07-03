@@ -1,1 +1,1 @@
-export { UI as ShowMore } from './ui/show-more'
+export { UI as ShowMore } from './ui'
